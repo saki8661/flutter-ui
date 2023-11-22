@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shop_ui/constants.dart';
+import 'package:flutter_shop_ui/models/Category.dart';
+import 'package:flutter_shop_ui/screens/home/components/categories.dart';
+import 'package:flutter_shop_ui/screens/home/components/search_form.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,13 +15,15 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: IconButton(onPressed: (){},icon: SvgPicture.asset("assets/icons/menu.svg"),
+        leading: IconButton(
+          onPressed: () {},
+          icon: SvgPicture.asset("assets/icons/menu.svg"),
         ),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset("assets/icons/Location.svg"),
-            const SizedBox(width: defaultPadding/2),
+            const SizedBox(width: defaultPadding / 2),
             Text(
               "15/2 New Texas",
               style: Theme.of(context).textTheme.titleSmall,
@@ -26,7 +31,9 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
         actions: [
-          IconButton(onPressed: (){}, icon: SvgPicture.asset("assets/icons/Notification.svg"),
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset("assets/icons/Notification.svg"),
           ),
         ],
       ),
@@ -38,24 +45,329 @@ class HomeScreen extends StatelessWidget {
             Text(
               "Explore",
               style: Theme.of(context)
-              .textTheme
-              .headlineMedium!
-              .copyWith(fontWeight: FontWeight.w500, color: Colors.black),
+                  .textTheme
+                  .headlineMedium!
+                  .copyWith(fontWeight: FontWeight.w500, color: Colors.black),
             ),
             Text(
               "best Outfits for you",
               style: TextStyle(fontSize: 18),
             ),
-            Form(child: TextFormField(
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Colors.white,
-                border: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadius)),
-                  borderSide: BorderSide.none,
-                ),
-              ),
+            const Padding(
+              padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+              child: SearchForm(),
             ),
+            const Categories(),
+            Row(
+              children: [
+                Text(
+                    "New Arrival",
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleMedium!.copyWith(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -63,3 +375,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
