@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shop_ui/constants.dart';
 import 'package:flutter_shop_ui/models/Category.dart';
+import 'package:flutter_shop_ui/models/Product.dart';
+import 'package:flutter_shop_ui/screens/home/components/Popular.dart';
 import 'package:flutter_shop_ui/screens/home/components/categories.dart';
+import 'package:flutter_shop_ui/screens/home/components/new_arrival.dart';
+import 'package:flutter_shop_ui/screens/home/components/product_card.dart';
 import 'package:flutter_shop_ui/screens/home/components/search_form.dart';
+import 'package:flutter_shop_ui/screens/home/components/section_title.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -37,7 +42,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(defaultPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,321 +63,15 @@ class HomeScreen extends StatelessWidget {
               child: SearchForm(),
             ),
             const Categories(),
-            Row(
-              children: [
-                Text(
-                    "New Arrival",
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium!.copyWith(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w500
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  ),
-                ),
-              ],
-            ),
+            const SizedBox(height: defaultPadding),
+            const NewArrival(),
+            const SizedBox(height: defaultPadding),
+            const Popular(),
           ],
         ),
       ),
     );
   }
 }
+
 
