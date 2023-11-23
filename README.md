@@ -16,7 +16,10 @@
 
 ### 11/23
 
-- ![flutter-ui-home-screen.png](..%2F..%2F..%2F..%2F..%2FVolumes%2FSD%EC%B9%B4%EB%93%9C%2F%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%2FFlutter-ex%2Fflutter-ui-home-screen.png)
 - HomeScreen 완성
-- ![flutter-ui-details-screen.png](..%2F..%2F..%2F..%2F..%2FVolumes%2FSD%EC%B9%B4%EB%93%9C%2F%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%2FFlutter-ex%2Fflutter-ui-details-screen.png)
+
+  <img width="309" alt="flutter-ui-home-screen" src="https://github.com/saki8661/flutter-ui/assets/135561587/4c752aaf-4cb7-455a-af03-3692ea3b002a">
+
 - DetailsScreen 완성
+
+  ![flutter-ui-details-screen](https://github.com/saki8661/flutter-ui/assets/135561587/e21081e3-fec2-4874-a2fa-c215d3b8b196)
